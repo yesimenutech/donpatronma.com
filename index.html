@@ -1,0 +1,1291 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Don Patron - Mexican Grill & Cantina | Marlborough, MA</title>
+    <meta name="description" content="Authentic Mexican cuisine in Marlborough, MA. Fresh ingredients, traditional flavor, and a warm, family-friendly atmosphere at Don Patron Mexican Grill & Cantina.">
+    <meta name="keywords" content="Mexican Restaurant, Marlborough MA, Don Patron, Mexican Grill, Cantina, Tacos, Molcajete, Authentic Mexican Food">
+    <meta name="author" content="Menutech">
+    <link rel="canonical" href="https://donpatronma.com/">
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/yesimenutech/donpatronma.com/main/img/DonPatronLOGO.png">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://donpatronma.com/">
+    <meta property="og:title" content="Don Patron - Mexican Grill & Cantina | Marlborough, MA">
+    <meta property="og:description" content="Brindamos una experiencia auténtica de cocina mexicana con platillos frescos, sabor tradicional y un ambiente familiar en Marlborough, MA.">
+    <meta property="og:image" content="https://raw.githubusercontent.com/yesimenutech/donpatronma.com/main/img/fachadadonpatron.webp">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://donpatronma.com/">
+    <meta property="twitter:title" content="Don Patron - Mexican Grill & Cantina | Marlborough, MA">
+    <meta property="twitter:description" content="Authentic Mexican cuisine in Marlborough, MA. Fresh ingredients, traditional flavor, and a warm atmosphere.">
+    <meta property="twitter:image" content="https://raw.githubusercontent.com/yesimenutech/donpatronma.com/main/img/fachadadonpatron.webp">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Don Patron - Mexican Grill & Cantina",
+      "image": [
+        "https://raw.githubusercontent.com/yesimenutech/donpatronma.com/main/img/fachadadonpatron.webp",
+        "https://raw.githubusercontent.com/yesimenutech/donpatronma.com/main/img/multiplesplatillos.webp"
+      ],
+      "@id": "https://donpatronma.com/",
+      "url": "https://donpatronma.com/",
+      "telephone": "+1-508-251-2849",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "820 Boston Post Rd E",
+        "addressLocality": "Marlborough",
+        "addressRegion": "MA",
+        "postalCode": "01752",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 42.348633,
+        "longitude": -71.530398
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Sunday"],
+          "opens": "11:00",
+          "closes": "22:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Friday", "Saturday"],
+          "opens": "11:00",
+          "closes": "23:00"
+        }
+      ],
+      "servesCuisine": "Mexican",
+      "priceRange": "$$",
+      "acceptsReservations": "false"
+    }
+    </script>
+
+    <style>
+        :root {
+            /* PALETA DE COLORES EXACTA SOLICITADA */
+            --turquoise: #00A896;        /* Principal: botones, enlaces, iconos, llamados a la acción */
+            --turquoise-dark: #008274;
+            --navy: #0F1E36;             /* Oscuro: encabezados, menú de navegación y pie de página */
+            --navy-light: #1A2E4F;
+            --cream: #FAF6E9;            /* Fondo principal: crema cálido (destaca fotos de comida) */
+            --cream-card: #FFFDF7;
+            --wood: #6E473B;             /* Apoyo: madera café (inspirado en vigas y techo) */
+            --wood-light: #8A5A4A;
+            --text-dark: #2B2D42;        /* Texto: gris oscuro */
+            --text-muted: #5C6070;
+            --white: #FFFFFF;
+            
+            /* SOMBRAS Y BORDES */
+            --shadow-sm: 0 4px 12px rgba(15, 30, 54, 0.08);
+            --shadow-md: 0 10px 25px rgba(15, 30, 54, 0.14);
+            --shadow-lg: 0 18px 40px rgba(15, 30, 54, 0.22);
+            --font-title: 'Cinzel', serif;
+            --font-body: 'Plus Jakarta Sans', sans-serif;
+            --radius-md: 12px;
+            --radius-lg: 20px;
+            --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background-color: var(--cream);
+            color: var(--text-dark);
+            line-height: 1.65;
+            overflow-x: hidden;
+        }
+
+        /* ENCABEZADOS (AZUL MARINO) */
+        h1, h2, h3, h4 {
+            font-family: var(--font-title);
+            color: var(--navy);
+            line-height: 1.25;
+            letter-spacing: 0.5px;
+        }
+
+        /* ENLACES (AZUL TURQUESA) */
+        a {
+            text-decoration: none;
+            color: var(--turquoise);
+            transition: var(--transition);
+        }
+
+        a:hover {
+            color: var(--turquoise-dark);
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1240px;
+            margin: 0 auto;
+        }
+
+        /* BOTONES (AZUL TURQUESA COMO CALL TO ACTION) */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.6rem;
+            font-weight: 700;
+            font-size: 0.95rem;
+            padding: 1rem 2.2rem;
+            border-radius: 50px;
+            cursor: pointer;
+            border: 2px solid transparent;
+            transition: var(--transition);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .btn-primary {
+            background-color: var(--turquoise);
+            color: var(--white);
+            box-shadow: 0 8px 20px rgba(0, 168, 150, 0.35);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--turquoise-dark);
+            color: var(--white);
+            transform: translateY(-2px);
+            box-shadow: 0 12px 25px rgba(0, 168, 150, 0.45);
+        }
+
+        .btn-outline {
+            border-color: var(--white);
+            color: var(--white);
+            background: transparent;
+        }
+
+        .btn-outline:hover {
+            background: var(--turquoise);
+            border-color: var(--turquoise);
+            color: var(--white);
+        }
+
+        /* HEADER / MENÚ DE NAVEGACIÓN (AZUL MARINO) */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: var(--navy);
+            z-index: 1000;
+            border-bottom: 3px solid var(--turquoise);
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+        }
+
+        .nav-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 90px;
+        }
+
+        .logo-box {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+
+        .logo-box img {
+            height: 60px;
+            width: auto;
+        }
+
+        .logo-text {
+            color: var(--white);
+            font-family: var(--font-title);
+            font-weight: 800;
+            font-size: 1.3rem;
+            letter-spacing: 1px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logo-text span {
+            font-size: 0.7rem;
+            color: var(--turquoise);
+            font-family: var(--font-body);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 2.5rem;
+        }
+
+        .nav-links a {
+            color: var(--white);
+            font-weight: 600;
+            font-size: 0.95rem;
+            position: relative;
+            padding: 0.5rem 0;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background-color: var(--turquoise);
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover {
+            color: var(--turquoise);
+        }
+
+        .nav-links a:hover::after,
+        .nav-links a.active::after {
+            width: 100%;
+        }
+
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .lang-toggle {
+            background: rgba(0, 168, 150, 0.2);
+            border: 2px solid var(--turquoise);
+            color: var(--white);
+            padding: 0.45rem 0.95rem;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 0.8rem;
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .lang-toggle:hover {
+            background: var(--turquoise);
+            color: var(--white);
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 5px;
+        }
+
+        .hamburger span {
+            width: 28px;
+            height: 3px;
+            background-color: var(--turquoise);
+            border-radius: 3px;
+            transition: var(--transition);
+        }
+
+        /* HERO SECTION */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 90px;
+            background: linear-gradient(rgba(15, 30, 54, 0.78), rgba(15, 30, 54, 0.88)),
+                        url('https://raw.githubusercontent.com/yesimenutech/donpatronma.com/main/img/fachadadonpatron.webp') center/cover no-repeat;
+            background-attachment: fixed;
+            text-align: center;
+            color: var(--white);
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 35px;
+            background-color: var(--cream);
+            clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 100%);
+        }
+
+        .hero-content {
+            max-width: 850px;
+            z-index: 2;
+            padding: 2rem 0;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background-color: rgba(0, 168, 150, 0.25);
+            border: 1.5px solid var(--turquoise);
+            padding: 0.5rem 1.25rem;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 1.5rem;
+            color: var(--white);
+            backdrop-filter: blur(5px);
+        }
+
+        .hero h1 {
+            color: var(--white);
+            font-size: 3.8rem;
+            font-weight: 800;
+            margin-bottom: 1.2rem;
+            text-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 2.5rem;
+            color: rgba(255, 255, 255, 0.92);
+            max-width: 680px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-buttons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1.2rem;
+            flex-wrap: wrap;
+        }
+
+        /* ABOUT US SECTION */
+        .about {
+            padding: 7rem 0;
+            background-color: var(--cream);
+            position: relative;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 4.5rem;
+        }
+
+        .about-image-wrapper {
+            position: relative;
+        }
+
+        .about-image-main {
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            border: 8px solid var(--cream-card);
+        }
+
+        .about-image-main img {
+            width: 100%;
+            height: 480px;
+            object-fit: cover;
+            transition: transform 0.7s ease;
+        }
+
+        .about-image-main:hover img {
+            transform: scale(1.04);
+        }
+
+        .about-badge-float {
+            position: absolute;
+            bottom: -25px;
+            right: 25px;
+            background-color: var(--wood);
+            color: var(--white);
+            padding: 1.5rem;
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-md);
+            max-width: 250px;
+            border: 3px solid var(--cream);
+        }
+
+        .about-badge-float h4 {
+            color: var(--white);
+            font-size: 1.15rem;
+            margin-bottom: 0.4rem;
+        }
+
+        .about-badge-float p {
+            font-size: 0.88rem;
+            opacity: 0.95;
+            color: var(--cream);
+        }
+
+        .about-content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .section-subtitle {
+            display: inline-block;
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: var(--wood);
+            margin-bottom: 0.75rem;
+            background: rgba(110, 71, 59, 0.12);
+            padding: 0.4rem 1.2rem;
+            border-radius: 50px;
+            border: 1px solid rgba(110, 71, 59, 0.25);
+        }
+
+        .about-content h2 {
+            font-size: 2.6rem;
+            margin-bottom: 1.5rem;
+            color: var(--navy);
+        }
+
+        .about-content .lead-text {
+            font-size: 1.15rem;
+            font-weight: 500;
+            color: var(--text-dark);
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .vision-box {
+            background-color: var(--cream-card);
+            border-left: 5px solid var(--turquoise);
+            padding: 1.8rem;
+            border-radius: 0 var(--radius-md) var(--radius-md) 0;
+            margin-top: 2rem;
+            box-shadow: var(--shadow-sm);
+            border-top: 1px solid rgba(110, 71, 59, 0.1);
+            border-right: 1px solid rgba(110, 71, 59, 0.1);
+            border-bottom: 1px solid rgba(110, 71, 59, 0.1);
+        }
+
+        .vision-box h3 {
+            font-size: 1.15rem;
+            color: var(--wood);
+            margin-bottom: 0.6rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* GALERÍA SECTION (SOLO IMÁGENES: SIN TÍTULOS NI DESCRIPCIONES, TODOS LOS PLATILLOS INTEGRADOS) */
+        .gallery-section {
+            padding: 7rem 0;
+            background-color: var(--cream);
+            border-top: 3px solid var(--wood);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+            gap: 1.8rem;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            height: 310px;
+            box-shadow: var(--shadow-sm);
+            cursor: pointer;
+            background-color: var(--navy);
+            border: 3px solid var(--cream-card);
+            transition: var(--transition);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+            border-color: var(--turquoise);
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.08);
+        }
+
+        /* UBICACIÓN & HORARIOS SECTION (CON HORARIO FORMAL AGRUPADO Y SIN SATURACIÓN) */
+        .location-section {
+            padding: 7rem 0;
+            background-color: var(--navy);
+            color: var(--white);
+            position: relative;
+            border-top: 4px solid var(--turquoise);
+        }
+
+        .location-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .location-info h2 {
+            color: var(--white);
+            font-size: 2.6rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .location-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(0, 168, 150, 0.35);
+            padding: 2.2rem;
+            border-radius: var(--radius-md);
+            margin-bottom: 2rem;
+            box-shadow: var(--shadow-md);
+        }
+
+        .info-row {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-bottom: 1.8rem;
+        }
+
+        .info-row:last-child {
+            margin-bottom: 0;
+        }
+
+        .info-icon {
+            color: var(--turquoise);
+            flex-shrink: 0;
+            margin-top: 3px;
+        }
+
+        .info-details h4 {
+            color: var(--white);
+            font-size: 1.15rem;
+            margin-bottom: 0.3rem;
+            font-family: var(--font-body);
+        }
+
+        .info-details p, .info-details a {
+            color: rgba(255, 255, 255, 0.85);
+            font-size: 0.98rem;
+        }
+
+        .info-details a:hover {
+            color: var(--turquoise);
+        }
+
+        .hours-list {
+            margin-top: 1rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.12);
+            padding-top: 1rem;
+        }
+
+        .hours-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.75rem 0;
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.9);
+            border-bottom: 1px dashed rgba(255, 255, 255, 0.12);
+        }
+
+        .hours-item:last-child {
+            border-bottom: none;
+        }
+
+        .hours-day {
+            font-weight: 600;
+            color: var(--turquoise);
+        }
+
+        .map-container {
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+            border: 4px solid var(--turquoise);
+            height: 100%;
+            min-height: 480px;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            min-height: 480px;
+            border: 0;
+            display: block;
+        }
+
+        /* FOOTER (AZUL MARINO CON COPYRIGHT DINÁMICO POWERED BY MENUTECH) */
+        footer {
+            background-color: var(--navy);
+            color: var(--white);
+            padding: 5rem 0 2rem;
+            border-top: 4px solid var(--wood);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr;
+            gap: 4rem;
+            margin-bottom: 4rem;
+        }
+
+        .footer-brand p {
+            color: rgba(255, 255, 255, 0.8);
+            margin: 1.2rem 0;
+            font-size: 0.98rem;
+            max-width: 320px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .social-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.08);
+            color: var(--turquoise);
+            border: 1px solid var(--turquoise);
+            transition: var(--transition);
+        }
+
+        .social-btn:hover {
+            background: var(--turquoise);
+            color: var(--white);
+            transform: translateY(-3px);
+        }
+
+        .footer-title {
+            color: var(--white);
+            font-size: 1.25rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-bottom: 0.8rem;
+        }
+
+        .footer-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 3px;
+            background-color: var(--turquoise);
+        }
+
+        .footer-links li {
+            margin-bottom: 0.8rem;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.98rem;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: var(--turquoise);
+            padding-left: 6px;
+        }
+
+        .footer-bottom {
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.12);
+            text-align: center;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.92rem;
+        }
+
+        .footer-bottom a {
+            color: var(--turquoise);
+            font-weight: 700;
+        }
+
+        .footer-bottom a:hover {
+            text-decoration: underline;
+        }
+
+        /* MODAL IMAGEN */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(15, 30, 54, 0.94);
+            backdrop-filter: blur(8px);
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .modal.show {
+            display: flex;
+            opacity: 1;
+        }
+
+        .modal-content {
+            max-width: 850px;
+            max-height: 85vh;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            position: relative;
+            border: 4px solid var(--turquoise);
+        }
+
+        .modal-content img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .close-modal {
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            color: var(--white);
+            font-size: 2.8rem;
+            font-weight: bold;
+            cursor: pointer;
+            z-index: 2001;
+            background: none;
+            border: none;
+            line-height: 1;
+        }
+
+        /* RESPONSIVE DESIGN */
+        @media (max-width: 1024px) {
+            .hero h1 {
+                font-size: 3rem;
+            }
+            .about-grid, .location-grid {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 2.5rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hamburger {
+                display: flex;
+            }
+            .nav-links {
+                position: fixed;
+                top: 90px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 90px);
+                background-color: var(--navy);
+                flex-direction: column;
+                justify-content: center;
+                gap: 2rem;
+                transition: var(--transition);
+                padding: 2rem;
+                border-top: 2px solid var(--turquoise);
+            }
+            .nav-links.active {
+                left: 0;
+            }
+            .nav-actions {
+                margin-left: auto;
+                margin-right: 1.5rem;
+            }
+            .hero h1 {
+                font-size: 2.3rem;
+            }
+            .hero p {
+                font-size: 1.05rem;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+            .about-badge-float {
+                position: relative;
+                bottom: auto;
+                right: auto;
+                margin-top: 1.5rem;
+                max-width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo-text {
+                font-size: 1.1rem;
+            }
+            .logo-box img {
+                height: 48px;
+            }
+            .hero-buttons {
+                flex-direction: column;
+                width: 100%;
+            }
+            .hero-buttons .btn {
+                width: 100%;
+            }
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER / NAVEGACIÓN -->
+    <header id="header">
+        <div class="container nav-container">
+            <a href="#hero" class="logo-box" aria-label="Don Patron Home">
+                <img src="https://raw.githubusercontent.com/yesimenutech/donpatronma.com/main/img/DonPatronLOGO.png" alt="Don Patron Logo">
+                <div class="logo-text">
+                    DON PATRON
+                    <span>Mexican Grill & Cantina</span>
+                </div>
+            </a>
+
+            <nav class="nav-links" id="nav-links">
+                <a href="#about" class="nav-item" data-i18n="nav_about">Nosotros</a>
+                <a href="#gallery" class="nav-item" data-i18n="nav_gallery">Galería</a>
+                <a href="#location" class="nav-item" data-i18n="nav_location">Ubicación y Horarios</a>
+                <a href="https://donpatron-mexicangrillc.onlineordering.io/en?locationId=1456664&orderMode=in_store_pickup" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="padding: 0.65rem 1.6rem; font-size: 0.85rem;" data-i18n="nav_order">Ordenar Online</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="lang-toggle" id="lang-toggle" aria-label="Cambiar Idioma">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                    <span id="lang-text">EN</span>
+                </button>
+
+                <button class="hamburger" id="hamburger" aria-label="Menú móvil">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="hero">
+        <div class="container hero-content">
+            <div class="hero-badge" data-i18n="hero_badge">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+                Marlborough, MA
+            </div>
+            <h1 data-i18n="hero_title">Auténtico Sabor Mexicano & Tradición en Cada Platillo</h1>
+            <p data-i18n="hero_subtitle">Disfruta de la cocina mexicana con ingredientes frescos, un ambiente familiar inolvidable y la más auténtica hospitalidad cantina en Boston Post Rd.</p>
+            
+            <div class="hero-buttons">
+                <a href="https://donpatron-mexicangrillc.onlineordering.io/en?locationId=1456664&orderMode=in_store_pickup" target="_blank" rel="noopener noreferrer" class="btn btn-primary" data-i18n="hero_btn_order">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                    Ordenar en Línea
+                </a>
+                <a href="#gallery" class="btn btn-outline" data-i18n="hero_btn_gallery">Ver Galería</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT US SECTION -->
+    <section class="about" id="about">
+        <div class="container about-grid">
+            <div class="about-image-wrapper">
+                <div class="about-image-main">
+                    <img src="https://raw.githubusercontent.com/yesimenutech/donpatronma.com/main/img/multiplesplatillos.webp" alt="Platillos Don Patron Mexican Grill">
+                </div>
+                <div class="about-badge-float">
+                    <h4 data-i18n="about_badge_title">Cocina Tradicional</h4>
+                    <p data-i18n="about_badge_text">Ingredientes frescos y recetas transmitidas con orgullo y pasión.</p>
+                </div>
+            </div>
+
+            <div class="about-content">
+                <span class="section-subtitle" data-i18n="about_subtitle">Nuestra Historia</span>
+                <h2 data-i18n="about_title">Más que un Restaurante, Una Tradición Familiar</h2>
+                <p class="lead-text" data-i18n="about_lead">
+                    Brindar una experiencia auténtica de cocina mexicana, ofreciendo platillos frescos, sabor tradicional y un ambiente cálido y familiar donde cada visita se convierta en un momento para disfrutar y compartir.
+                </p>
+
+                <div class="vision-box">
+                    <h3 data-i18n="about_vision_title">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+                        Nuestra Visión
+                    </h3>
+                    <p data-i18n="about_vision_text">
+                        Ser el restaurante mexicano favorito de nuestra comunidad, reconocido por nuestra calidad, hospitalidad y por crear experiencias que hagan que nuestros clientes siempre quieran volver.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY SECTION (100% LIMPIA: ÚNICAMENTE FOTOGRAFÍAS DE TODOS LOS PLATILLOS SIN NINGÚN TÍTULO NI DESCRIPCIÓN) -->
+    <section class="gallery-section" id="gallery">
+        <div class="container">
+            <div class="gallery-grid">
+                <div class="gallery-item" data-src="https://raw.githubusercontent.com/yesimenutech/donpatronma.com/main/img/tacos.webp">
+                    <img src="https://raw.githubusercontent.com/yesimenutech/donpatronma.com/main/img/tacos.webp" alt="Platillo Don Patron" loading="lazy">
+                </div>
+                <div class="gallery-item" data-src="https://raw.githubusercontent.com/yesimenutech/donpatronma.com/main/img/burro.webp">
+                    <img src="https://raw.githubusercontent.com/yesimenutech/donpatronma.com/main/img/burro.webp" alt="Platillo Don Patron" loading="lazy">
+                </div>
+                <div class="gallery-item" data-src="https://raw.githubusercontent.com/yesimenutech/donpatronma.com/main/img/molcajete.webp">
+                    <img src="https://raw.githubusercontent.com/yesimenutech/donpatronma.com/main/img/molcajete.webp" alt="Platillo Don Patron" loading="lazy">
+                </div>
+                <div class="gallery-item" data-src="https://raw.githubusercontent.com/yesimenutech/donpatronma.com/main/img/ceviche.webp">
+                    <img src="https://raw.githubusercontent.com/yesimenutech/donpatronma.com/main/img/ceviche.webp" alt="Platillo Don Patron" loading="lazy">
+                </div>
+                <div class="gallery-item" data-src="https://raw.githubusercontent.com/yesimenutech/donpatronma.com/main/img/flautas.webp">
+                    <img src="https://raw.githubusercontent.com/yesimenutech/donpatronma.com/main/img/flautas.webp" alt="Platillo Don Patron" loading="lazy">
+                </div>
+                <div class="gallery-item" data-src="https://raw.githubusercontent.com/yesimenutech/donpatronma.com/main/img/nachosguacamole.webp">
+                    <img src="https://raw.githubusercontent.com/yesimenutech/donpatronma.com/main/img/nachosguacamole.webp" alt="Platillo Don Patron" loading="lazy">
+                </div>
+                <div class="gallery-item" data-src="https://raw.githubusercontent.com/yesimenutech/donpatronma.com/main/img/tortaconpapas.webp">
+                    <img src="https://raw.githubusercontent.com/yesimenutech/donpatronma.com/main/img/tortaconpapas.webp" alt="Platillo Don Patron" loading="lazy">
+                </div>
+                <div class="gallery-item" data-src="https://raw.githubusercontent.com/yesimenutech/donpatronma.com/main/img/drink.webp">
+                    <img src="https://raw.githubusercontent.com/yesimenutech/donpatronma.com/main/img/drink.webp" alt="Platillo Don Patron" loading="lazy">
+                </div>
+                <div class="gallery-item" data-src="https://raw.githubusercontent.com/yesimenutech/donpatronma.com/main/img/platillo.webp">
+                    <img src="https://raw.githubusercontent.com/yesimenutech/donpatronma.com/main/img/platillo.webp" alt="Platillo Don Patron 1" loading="lazy">
+                </div>
+                <div class="gallery-item" data-src="https://raw.githubusercontent.com/yesimenutech/donpatronma.com/main/img/platillo1.webp">
+                    <img src="https://raw.githubusercontent.com/yesimenutech/donpatronma.com/main/img/platillo1.webp" alt="Platillo Don Patron 2" loading="lazy">
+                </div>
+                <div class="gallery-item" data-src="https://raw.githubusercontent.com/yesimenutech/donpatronma.com/main/img/platillo2.webp">
+                    <img src="https://raw.githubusercontent.com/yesimenutech/donpatronma.com/main/img/platillo2.webp" alt="Platillo Don Patron 3" loading="lazy">
+                </div>
+                <div class="gallery-item" data-src="https://raw.githubusercontent.com/yesimenutech/donpatronma.com/main/img/platillo3.webp">
+                    <img src="https://raw.githubusercontent.com/yesimenutech/donpatronma.com/main/img/platillo3.webp" alt="Platillo Don Patron 4" loading="lazy">
+                </div>
+                <div class="gallery-item" data-src="https://raw.githubusercontent.com/yesimenutech/donpatronma.com/main/img/platillos4.webp">
+                    <img src="https://raw.githubusercontent.com/yesimenutech/donpatronma.com/main/img/platillos4.webp" alt="Platillos Variados" loading="lazy">
+                </div>
+                <div class="gallery-item" data-src="https://raw.githubusercontent.com/yesimenutech/donpatronma.com/main/img/platillo5.webp">
+                    <img src="https://raw.githubusercontent.com/yesimenutech/donpatronma.com/main/img/platillo5.webp" alt="Platillo Don Patron 5" loading="lazy">
+                </div>
+                <div class="gallery-item" data-src="https://raw.githubusercontent.com/yesimenutech/donpatronma.com/main/img/platillo6.webp">
+                    <img src="https://raw.githubusercontent.com/yesimenutech/donpatronma.com/main/img/platillo6.webp" alt="Platillo Don Patron 6" loading="lazy">
+                </div>
+                <div class="gallery-item" data-src="https://raw.githubusercontent.com/yesimenutech/donpatronma.com/main/img/platillo7.webp">
+                    <img src="https://raw.githubusercontent.com/yesimenutech/donpatronma.com/main/img/platillo7.webp" alt="Platillo Don Patron 7" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- UBICACIÓN & HORARIOS SECTION (CON HORARIO FORMAL AGRUPADO Y SIN SATURACIÓN) -->
+    <section class="location-section" id="location">
+        <div class="container location-grid">
+            <div class="location-info">
+                <span class="section-subtitle" style="color: var(--white); background: rgba(0, 168, 150, 0.3); border-color: var(--turquoise);" data-i18n="loc_subtitle">Visítanos</span>
+                <h2 data-i18n="loc_title">Ubicación & Horarios</h2>
+
+                <div class="location-card">
+                    <div class="info-row">
+                        <svg class="info-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        <div class="info-details">
+                            <h4 data-i18n="loc_address_title">Dirección</h4>
+                            <p>820 Boston Post Rd E, Marlborough, MA 01752, United States</p>
+                        </div>
+                    </div>
+
+                    <div class="info-row">
+                        <svg class="info-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        <div class="info-details">
+                            <h4 data-i18n="loc_phone_title">Teléfono</h4>
+                            <p><a href="tel:5082512849">508-251-2849</a></p>
+                        </div>
+                    </div>
+
+                    <div class="info-row">
+                        <svg class="info-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        <div class="info-details" style="width: 100%;">
+                            <h4 data-i18n="loc_hours_title">Horario de Atención</h4>
+                            <div class="hours-list">
+                                <div class="hours-item">
+                                    <span class="hours-day" data-i18n="hours_sun_thu">Domingo – Jueves</span>
+                                    <span>11:00 AM – 10:00 PM</span>
+                                </div>
+                                <div class="hours-item">
+                                    <span class="hours-day" data-i18n="hours_fri_sat">Viernes – Sábado</span>
+                                    <span>11:00 AM – 11:00 PM</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="map-container">
+                <iframe 
+                    title="Don Patron Location Map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2950.416965159828!2d-71.53258668454508!3d42.3486330791877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e388d7ae1362e5%3A0xc6c761618c5e6bc4!2s820%20Boston%20Post%20Rd%20E%2C%20Marlborough%2C%20MA%2001752%2C%20USA!5e0!3m2!1sen!2smx!4v1700000000000!5m2!1sen!2smx" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER COMPLETO (AZUL MARINO CON COPYRIGHT DINÁMICO POWERED BY MENUTECH) -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo-box">
+                        <img src="https://raw.githubusercontent.com/yesimenutech/donpatronma.com/main/img/DonPatronLOGO.png" alt="Don Patron Logo">
+                        <div class="logo-text">
+                            DON PATRON
+                            <span>Mexican Grill & Cantina</span>
+                        </div>
+                    </div>
+                    <p data-i18n="footer_bio">
+                        Auténtica cocina mexicana y ambiente familiar. Comprometidos con el sabor tradicional y una hospitalidad que te hará sentir como en casa.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/donpatronmexicanma/?locale=es_LA" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Facebook">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3V2z"/></svg>
+                        </a>
+                        <a href="https://www.instagram.com/don_patron.ma/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="footer-title" data-i18n="footer_links_title">Navegación</h3>
+                    <ul class="footer-links">
+                        <li><a href="#about" data-i18n="nav_about">Nosotros</a></li>
+                        <li><a href="#gallery" data-i18n="nav_gallery">Galería</a></li>
+                        <li><a href="#location" data-i18n="nav_location">Ubicación y Horarios</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer-title" data-i18n="footer_order_title">Pedidos en Línea</h3>
+                    <p style="color: rgba(255,255,255,0.8); margin-bottom: 1.5rem; font-size: 0.98rem;" data-i18n="footer_order_desc">
+                        Ordena tus platillos mexicanos favoritos para recojo en tienda directamente desde nuestra plataforma oficial.
+                    </p>
+                    <a href="https://donpatron-mexicangrillc.onlineordering.io/en?locationId=1456664&orderMode=in_store_pickup" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="padding: 0.8rem 1.8rem; font-size: 0.88rem;" data-i18n="nav_order">
+                        Ordenar Online
+                    </a>
+                </div>
+            </div>
+
+            <!-- COPYRIGHT DINÁMICO POWERED BY MENUTECH -->
+            <div class="footer-bottom">
+                <p id="copyright-text"></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODAL GALERÍA -->
+    <div class="modal" id="image-modal" role="dialog" aria-modal="true" aria-label="Vista de platillo">
+        <button class="close-modal" id="close-modal" aria-label="Cerrar modal">&times;</button>
+        <div class="modal-content">
+            <img src="" id="modal-image" alt="Platillo ampliado">
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT DE LA WEBPAGE -->
+    <script>
+        // --- 1. DICCIONARIO DE TRADUCCIÓN (ESPAÑOL / INGLÉS) ---
+        const translations = {
+            es: {
+                nav_about: "Nosotros",
+                nav_gallery: "Galería",
+                nav_location: "Ubicación y Horarios",
+                nav_order: "Ordenar Online",
+                hero_badge: "Marlborough, MA",
+                hero_title: "Auténtico Sabor Mexicano & Tradición en Cada Platillo",
+                hero_subtitle: "Disfruta de la cocina mexicana con ingredientes frescos, un ambiente familiar inolvidable y la más auténtica hospitalidad cantina en Boston Post Rd.",
+                hero_btn_order: "Ordenar en Línea",
+                hero_btn_gallery: "Ver Galería",
+                about_badge_title: "Cocina Tradicional",
+                about_badge_text: "Ingredientes frescos y recetas transmitidas con orgullo y pasión.",
+                about_subtitle: "Nuestra Historia",
+                about_title: "Más que un Restaurante, Una Tradición Familiar",
+                about_lead: "Brindar una experiencia auténtica de cocina mexicana, ofreciendo platillos frescos, sabor tradicional y un ambiente cálido y familiar donde cada visita se convierta en un momento para disfrutar y compartir.",
+                about_vision_title: "Nuestra Visión",
+                about_vision_text: "Ser el restaurante mexicano favorito de nuestra comunidad, reconocido por nuestra calidad, hospitalidad y por crear experiencias que hagan que nuestros clientes siempre quieran volver.",
+                loc_subtitle: "Visítanos",
+                loc_title: "Ubicación & Horarios",
+                loc_address_title: "Dirección",
+                loc_phone_title: "Teléfono",
+                loc_hours_title: "Horario de Atención",
+                hours_sun_thu: "Domingo – Jueves",
+                hours_fri_sat: "Viernes – Sábado",
+                footer_bio: "Auténtica cocina mexicana y ambiente familiar. Comprometidos con el sabor tradicional y una hospitalidad que te hará sentir como en casa.",
+                footer_links_title: "Navegación",
+                footer_order_title: "Pedidos en Línea",
+                footer_order_desc: "Ordena tus platillos mexicanos favoritos para recojo en tienda directamente desde nuestra plataforma oficial."
+            },
+            en: {
+                nav_about: "About Us",
+                nav_gallery: "Gallery",
+                nav_location: "Hours & Location",
+                nav_order: "Order Online",
+                hero_badge: "Marlborough, MA",
+                hero_title: "Authentic Mexican Flavor & Tradition in Every Dish",
+                hero_subtitle: "Experience Mexican cuisine with fresh ingredients, an unforgettable family atmosphere, and authentic cantina hospitality on Boston Post Rd.",
+                hero_btn_order: "Order Online",
+                hero_btn_gallery: "View Gallery",
+                about_badge_title: "Traditional Cuisine",
+                about_badge_text: "Fresh ingredients and recipes passed down with pride and passion.",
+                about_subtitle: "Our History",
+                about_title: "More than a Restaurant, A Family Tradition",
+                about_lead: "Provide an authentic Mexican cuisine experience, offering fresh dishes, traditional flavor, and a warm, family-friendly atmosphere where every visit becomes a moment to enjoy and share.",
+                about_vision_title: "Our Vision",
+                about_vision_text: "To be the favorite Mexican restaurant in our community, recognized for our quality, hospitality, and for creating experiences that make our customers always want to return.",
+                loc_subtitle: "Visit Us",
+                loc_title: "Location & Hours",
+                loc_address_title: "Address",
+                loc_phone_title: "Phone",
+                loc_hours_title: "Business Hours",
+                hours_sun_thu: "Sunday – Thursday",
+                hours_fri_sat: "Friday – Saturday",
+                footer_bio: "Authentic Mexican cuisine and family atmosphere. Committed to traditional flavor and hospitality that will make you feel right at home.",
+                footer_links_title: "Navigation",
+                footer_order_title: "Online Orders",
+                footer_order_desc: "Order your favorite Mexican dishes for in-store pickup directly from our official platform."
+            }
+        };
+
+        // --- 2. SISTEMA DE TRADUCCIÓN NATIVO ---
+        let currentLang = 'es';
+        const langToggleBtn = document.getElementById('lang-toggle');
+        const langTextSpan = document.getElementById('lang-text');
+
+        function updateLanguage(lang) {
+            currentLang = lang;
+            document.documentElement.lang = lang;
+            langTextSpan.textContent = (lang === 'es') ? 'EN' : 'ES';
+
+            const elements = document.querySelectorAll('[data-i18n]');
+            elements.forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (translations[lang] && translations[lang][key]) {
+                    el.textContent = translations[lang][key];
+                }
+            });
+        }
+
+        langToggleBtn.addEventListener('click', () => {
+            const newLang = (currentLang === 'es') ? 'en' : 'es';
+            updateLanguage(newLang);
+        });
+
+        // --- 3. MENÚ MÓVIL (HAMBURGER) ---
+        const hamburgerBtn = document.getElementById('hamburger');
+        const navLinksContainer = document.getElementById('nav-links');
+        const navLinks = navLinksContainer.querySelectorAll('.nav-item');
+
+        hamburgerBtn.addEventListener('click', () => {
+            navLinksContainer.classList.toggle('active');
+        });
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navLinksContainer.classList.remove('active');
+            });
+        });
+
+        // --- 4. MODAL DE IMÁGENES PARA LA GALERÍA ---
+        const modal = document.getElementById('image-modal');
+        const modalImg = document.getElementById('modal-image');
+        const closeModalBtn = document.getElementById('close-modal');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+
+        galleryItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const src = item.getAttribute('data-src');
+                modalImg.src = src;
+                modal.classList.add('show');
+            });
+        });
+
+        closeModalBtn.addEventListener('click', () => {
+            modal.classList.remove('show');
+        });
+
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.classList.remove('show');
+            }
+        });
+
+        // --- 5. FOOTER DINÁMICO POWERED BY MENUTECH (OBLIGATORIO) ---
+        function renderDynamicCopyright() {
+            const currentYear = new Date().getFullYear();
+            const copyrightContainer = document.getElementById('copyright-text');
+            copyrightContainer.innerHTML = `&copy; 2015 - ${currentYear} Powered by <a href="https://menutech.xyz" target="_blank" rel="noopener noreferrer">Menutech</a>. Todos los derechos reservados.`;
+        }
+
+        renderDynamicCopyright();
+    </script>
+</body>
+</html>
