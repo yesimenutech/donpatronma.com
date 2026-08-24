@@ -324,38 +324,36 @@
             transition: var(--transition);
         }
 
-        /* HERO SECTION */
-        .hero {
-            position: relative;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding-top: 90px;
-            background: linear-gradient(rgba(15, 30, 54, 0.78), rgba(15, 30, 54, 0.88)),
-                        url('https://raw.githubusercontent.com/yesimenutech/donpatronma.com/main/img/fachadadonpatron.webp') center/cover no-repeat;
-            background-attachment: fixed;
-            text-align: center;
-            color: var(--white);
-            overflow: hidden;
-        }
+.hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 100px 20px 70px;
 
-        .hero::before {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 35px;
-            background-color: var(--cream);
-            clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 100%);
-        }
+    background:
+        linear-gradient(
+            rgba(15, 30, 54, 0.78),
+            rgba(15, 30, 54, 0.88)
+        ),
+        url('https://raw.githubusercontent.com/yesimenutech/donpatronma.com/main/img/fachadadonpatron.webp')
+        center / cover no-repeat;
 
-        .hero-content {
-            max-width: 850px;
-            z-index: 2;
-            padding: 2rem 0;
-        }
+    text-align: center;
+    color: var(--white);
+    overflow: hidden;
+}
+
+.hero-content {
+    position: relative;
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 2rem 0;
+    z-index: 2;
+}
 
         .-badge {
             display: inline-flex;
