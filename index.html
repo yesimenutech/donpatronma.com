@@ -324,76 +324,79 @@
             transition: var(--transition);
         }
 
-/* HERO CONTENT */
-.hero {
-    position: relative;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-    padding: 100px 20px 70px;
+        /* HERO CONTENT */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+            padding: 120px 20px 90px; /* Aumenté el espacio interior */
 
-    background:
-        linear-gradient(
-            rgba(15, 30, 54, 0.78),
-            rgba(15, 30, 54, 0.88)
-        ),
-        url('https://raw.githubusercontent.com/yesimenutech/donpatronma.com/main/img/fachadadonpatron.webp')
-        center / cover no-repeat;
+            background:
+                linear-gradient(
+                    rgba(15, 30, 54, 0.78),
+                    rgba(15, 30, 54, 0.88)
+                ),
+                url('https://raw.githubusercontent.com/yesimenutech/donpatronma.com/main/img/fachadadonpatron.webp')
+                center / cover no-repeat;
 
-    text-align: center;
-    color: var(--white);
-    overflow: hidden;
-}
+            text-align: center;
+            color: var(--white);
+            overflow: hidden;
+        }
 
-.hero-content {
-    position: relative;
-    width: 100%;
-    max-width: 850px;
-    margin: 0 auto;
-    padding: 2rem 0;
-    z-index: 2;
-}
-        .-badge {
+        .hero-content {
+            position: relative;
+            width: 100%;
+            max-width: 900px; /* Lo hice un poco más ancho para dar respiro */
+            margin: 0 auto;
+            padding: 3rem 0; /* Aumenté el padding */
+            z-index: 2;
+        }
+
+        .hero-badge {
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
             background-color: rgba(0, 168, 150, 0.25);
             border: 1.5px solid var(--turquoise);
-            padding: 0.5rem 1.25rem;
+            padding: 0.6rem 1.5rem;
             border-radius: 50px;
             font-size: 0.85rem;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 2px;
-            margin-bottom: 1.5rem;
-            color: var(--white);
+            margin-bottom: 2.5rem; /* Más separación hacia abajo */
+            color: var(--white); /* Forzado a blanco puro */
             backdrop-filter: blur(5px);
         }
 
-        . h1 {
-            color: var(--white);
+        .hero h1 {
+            color: var(--white); /* Forzado a blanco puro */
             font-size: 3.8rem;
             font-weight: 800;
-            margin-bottom: 1.2rem;
+            margin-bottom: 1.8rem; /* Más separación hacia abajo */
             text-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            line-height: 1.3; /* Mejor interlineado para que no se vea amontonado */
         }
 
-        . p {
+        .hero p {
             font-size: 1.25rem;
-            margin-bottom: 2.5rem;
-            color: rgba(255, 255, 255, 0.92);
-            max-width: 680px;
+            margin-bottom: 3.5rem; /* Mucha más separación hacia los botones */
+            color: var(--white); /* Forzado a blanco puro, quitamos la opacidad */
+            max-width: 720px;
             margin-left: auto;
             margin-right: auto;
+            line-height: 1.8; /* Mejor interlineado */
         }
 
-        .-buttons {
+        .hero-buttons {
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 1.2rem;
+            gap: 1.8rem; /* Botones más separados entre sí */
             flex-wrap: wrap;
         }
 
@@ -557,7 +560,7 @@
             transform: scale(1.08);
         }
 
-        /* UBICACIÓN & HORARIOS SECTION (CON HORARIO FORMAL AGRUPADO Y SIN SATURACIÓN) */
+        /* UBICACIÓN & HORARIOS SECTION */
         .location-section {
             padding: 7rem 0;
             background-color: var(--navy);
@@ -662,7 +665,7 @@
             display: block;
         }
 
-        /* FOOTER (AZUL MARINO CON COPYRIGHT DINÁMICO POWERED BY MENUTECH) */
+        /* FOOTER */
         footer {
             background-color: var(--navy);
             color: var(--white);
@@ -814,7 +817,7 @@
 
         /* RESPONSIVE DESIGN */
         @media (max-width: 1024px) {
-            . h1 {
+            .hero h1 {
                 font-size: 3rem;
             }
             .about-grid, .location-grid {
@@ -852,10 +855,10 @@
                 margin-left: auto;
                 margin-right: 1.5rem;
             }
-            . h1 {
+            .hero h1 {
                 font-size: 2.3rem;
             }
-            . p {
+            .hero p {
                 font-size: 1.05rem;
             }
             .footer-grid {
@@ -877,11 +880,11 @@
             .logo-box img {
                 height: 48px;
             }
-            .-buttons {
+            .hero-buttons {
                 flex-direction: column;
                 width: 100%;
             }
-            .-buttons .btn {
+            .hero-buttons .btn {
                 width: 100%;
             }
             .gallery-grid {
@@ -978,7 +981,7 @@
         </div>
     </section>
 
-    <!-- GALLERY SECTION (100% LIMPIA: ÚNICAMENTE FOTOGRAFÍAS DE TODOS LOS PLATILLOS SIN NINGÚN TÍTULO NI DESCRIPCIÓN) -->
+    <!-- GALLERY SECTION -->
     <section class="gallery-section" id="gallery">
         <div class="container">
             <div class="gallery-grid">
@@ -1034,7 +1037,7 @@
         </div>
     </section>
 
-    <!-- UBICACIÓN & HORARIOS SECTION (CON HORARIO FORMAL AGRUPADO Y SIN SATURACIÓN) -->
+    <!-- UBICACIÓN & HORARIOS SECTION -->
     <section class="location-section" id="location">
         <div class="container location-grid">
             <div class="location-info">
@@ -1089,7 +1092,7 @@
         </div>
     </section>
 
-    <!-- FOOTER COMPLETO (AZUL MARINO CON COPYRIGHT DINÁMICO POWERED BY MENUTECH) -->
+    <!-- FOOTER COMPLETO -->
     <footer>
         <div class="container">
             <div class="footer-grid">
