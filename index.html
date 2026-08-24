@@ -357,7 +357,7 @@
             padding: 2rem 0;
         }
 
-        .hero-badge {
+        .-badge {
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
@@ -374,7 +374,7 @@
             backdrop-filter: blur(5px);
         }
 
-        .hero h1 {
+        . h1 {
             color: var(--white);
             font-size: 3.8rem;
             font-weight: 800;
@@ -382,7 +382,7 @@
             text-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
         }
 
-        .hero p {
+        . p {
             font-size: 1.25rem;
             margin-bottom: 2.5rem;
             color: rgba(255, 255, 255, 0.92);
@@ -391,7 +391,7 @@
             margin-right: auto;
         }
 
-        .hero-buttons {
+        .-buttons {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -816,7 +816,7 @@
 
         /* RESPONSIVE DESIGN */
         @media (max-width: 1024px) {
-            .hero h1 {
+            . h1 {
                 font-size: 3rem;
             }
             .about-grid, .location-grid {
@@ -854,10 +854,10 @@
                 margin-left: auto;
                 margin-right: 1.5rem;
             }
-            .hero h1 {
+            . h1 {
                 font-size: 2.3rem;
             }
-            .hero p {
+            . p {
                 font-size: 1.05rem;
             }
             .footer-grid {
@@ -879,11 +879,11 @@
             .logo-box img {
                 height: 48px;
             }
-            .hero-buttons {
+            .-buttons {
                 flex-direction: column;
                 width: 100%;
             }
-            .hero-buttons .btn {
+            .-buttons .btn {
                 width: 100%;
             }
             .gallery-grid {
@@ -897,7 +897,7 @@
     <!-- HEADER / NAVEGACIÓN -->
     <header id="header">
         <div class="container nav-container">
-            <a href="#hero" class="logo-box" aria-label="Don Patron Home">
+            <a href="#" class="logo-box" aria-label="Don Patron Home">
                 <img src="https://raw.githubusercontent.com/yesimenutech/donpatronma.com/main/img/DonPatronLOGO.png" alt="Don Patron Logo">
                 <div class="logo-text">
                     DON PATRON
@@ -927,7 +927,7 @@
         </div>
     </header>
 
-    <!-- HERO SECTION -->
+    <!--  SECTION -->
     <section class="hero" id="hero">
         <div class="container hero-content">
             <div class="hero-badge" data-i18n="hero_badge">
@@ -938,7 +938,7 @@
             <p data-i18n="hero_subtitle">Disfruta de la cocina mexicana con ingredientes frescos, un ambiente familiar inolvidable y la más auténtica hospitalidad cantina en Boston Post Rd.</p>
             
             <div class="hero-buttons">
-                <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary" data-i18n="hero_btn_order">
+                <a href="https://donpatronmexicangrill.onlineordering.io/en/menu" target="_blank" rel="noopener noreferrer" class="btn btn-primary" data-i18n="hero_btn_order">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
                     Ordenar en Línea
                 </a>
